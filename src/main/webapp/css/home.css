@@ -1,0 +1,78 @@
+/* GENERAL PAGE SETTINGS */
+body {
+    background: #0d0d0d;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* PAGE TITLE */
+.title {
+    font-size: 42px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #ffffff;
+    text-shadow: 0 0 15px red;
+}
+
+/* MOVIE CONTAINER */
+.movie-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* MOVIE CARD */
+.movie-card {
+    background: #1a1a1a;
+    width: 280px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.25);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255, 0, 0, 0.5);
+}
+
+/* MOVIE POSTER */
+.poster {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000;
+}
+
+/* MOVIE TITLE */
+h3 {
+    margin: 15px 0 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* BOOK NOW BUTTON */
+.btn {
+    display: block;
+    padding: 12px 0;
+    background: red;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background: #ff3b3b;
+    box-shadow: 0 0 10px red;
+    transform: translateY(-3px);
+}

@@ -1,0 +1,94 @@
+/* ----- GLOBAL PAGE SETTINGS ----- */
+body {
+    background: #000;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* ----- MAIN CONTAINER ----- */
+.container {
+    text-align: center;
+    padding-top: 40px;
+}
+
+/* ----- MOVIE REEL GIF ----- */
+.movie-reel {
+    width: 180px;
+    margin-top: 20px;
+    animation: rotate 6s linear infinite;
+}
+
+/* Rotation animation */
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/* ----- HUMAN IMAGE LEFT & RIGHT ----- */
+.human-wrapper {
+    display: inline-block;
+    margin: 20px;
+}
+
+.human {
+    width: 160px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating animation */
+@keyframes float {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-12px); }
+    100% { transform: translateY(0px); }
+}
+
+/* ----- TITLE TEXT ----- */
+h2 {
+    font-size: 38px;
+    margin-top: 15px;
+    color: #fff;
+    font-weight: 600;
+    text-shadow: 0 0 15px red;
+}
+
+/* ----- BUTTONS AREA ----- */
+.btn-box {
+    margin-top: 30px;
+}
+
+.btn {
+    display: inline-block;
+    margin: 10px 15px;
+    padding: 12px 35px;
+    background: red;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #ff3333;
+    box-shadow: 0 0 15px red;
+    transform: translateY(-4px);
+}
+
+/* ----- RESPONSIVE DESIGN ----- */
+@media (max-width: 768px) {
+    .human {
+        width: 120px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .btn {
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+}
